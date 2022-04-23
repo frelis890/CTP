@@ -23,6 +23,7 @@ plt.axhline(0, color='black')  # x = 0
 plt.axvline(0, color='black')  # y = 0
 
 plt.legend()
+plt.savefig('Wykres1.pdf')
 plt.show()
 
 #ponowne drukowanie wykresu ze zbliżeniem
@@ -42,4 +43,5 @@ plt.xlim(36.00, 38.00)
 plt.ylim(-4.00, 6.00)
 
 plt.legend()
+plt.savefig('Wykres1-zblizenie.pdf')
 plt.show()
