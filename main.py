@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#załadowanie i wydruk wykresu
+# załadowanie i wydruk wykresu
 dane = np.loadtxt(r"C:\Users\HP\Desktop\PK\CTP\GL02.csv", unpack=True, delimiter=',', skiprows=1)
 
 time = dane[0]
@@ -26,7 +26,7 @@ plt.legend()
 plt.savefig('Wykres1.pdf')
 plt.show()
 
-#ponowne drukowanie wykresu ze zbliżeniem
+# ponowne drukowanie wykresu ze zbliżeniem
 plt.plot(time, v0, c = 'red', label = 'Voltage 0')
 plt.plot(time, v1, c = 'purple', label = 'Voltage 1')
 plt.plot(time, v2, c = 'orange', label = 'Voltage 2')
